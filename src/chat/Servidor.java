@@ -24,7 +24,7 @@ public class Servidor {
                 
         try{			
                 IServidorImpl s = new IServidorImpl();
-                Naming.rebind("ChatSrv", s); 
+                Naming.rebind("ServidorDoChat", s); 
         }catch (RemoteException | MalformedURLException e){
                 System.err.println("Erro: "+ e.getMessage() );	
                 System.exit(0);
